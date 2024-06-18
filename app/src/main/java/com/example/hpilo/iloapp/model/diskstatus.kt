@@ -1,4 +1,4 @@
-package com.hpilo.iloapp.model
+package com.example.hpilo.iloapp.model
 
 data class DiskStatus(
     val name: String,

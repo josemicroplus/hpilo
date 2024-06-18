@@ -1,7 +1,7 @@
 
 
 
-package com.hpilo.iloapp.model
+package com.example.hpilo.iloapp.model
 
 data class Storage(
     val id: String,

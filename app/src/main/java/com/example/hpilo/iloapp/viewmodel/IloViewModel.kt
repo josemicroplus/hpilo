@@ -1,13 +1,13 @@
-package com.hpilo.iloapp.viewmodel
+package com.example.hpilo.iloapp.viewmodel
 
 import android.app.Application
 import androidx.lifecycle.*
-import com.hpilo.iloapp.data.AppDatabase
-import com.hpilo.iloapp.model.Server
-import com.hpilo.iloapp.model.DiskStatus
-import com.hpilo.iloapp.model.SystemInfo
-import com.hpilo.iloapp.network.RetrofitClient
-import com.hpilo.iloapp.repository.ServerRepository
+import com.example.hpilo.iloapp.data.AppDatabase
+import com.example.hpilo.iloapp.model.Server
+import com.example.hpilo.iloapp.model.DiskStatus
+import com.example.hpilo.iloapp.model.SystemInfo
+import com.example.hpilo.iloapp.network.RetrofitClient
+import com.example.hpilo.iloapp.repository.ServerRepository
 import kotlinx.coroutines.launch
 
 class IloViewModel(application: Application) : AndroidViewModel(application) {

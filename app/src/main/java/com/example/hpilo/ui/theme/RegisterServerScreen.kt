@@ -1,14 +1,16 @@
-package com.hpilo.iloapp.ui
+package com.example.hpilo.iloapp.ui
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.unit.dp
-import com.hpilo.iloapp.model.Server
+import com.example.hpilo.iloapp.model.Server
 import com.example.hpilo.iloapp.viewmodel.IloViewModel
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun RegisterServerScreen(viewModel: IloViewModel) {
     var ip by remember { mutableStateOf("") }

@@ -1,4 +1,4 @@
-package com.hpilo.iloapp.model
+package com.example.hpilo.iloapp.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

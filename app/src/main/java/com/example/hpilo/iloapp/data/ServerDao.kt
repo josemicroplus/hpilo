@@ -1,9 +1,9 @@
-package com.hpilo.iloapp.data
+package com.example.hpilo.iloapp.data
 
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.Query
-import com.hpilo.iloapp.model.Server
+import com.example.hpilo.iloapp.model.Server
 import kotlinx.coroutines.flow.Flow
 
 @Dao

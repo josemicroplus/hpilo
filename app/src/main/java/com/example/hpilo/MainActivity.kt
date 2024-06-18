@@ -1,4 +1,4 @@
-package com.hpilo.iloapp
+package com.example.hpilo.iloapp
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -6,9 +6,9 @@ import androidx.activity.compose.setContent
 import androidx.activity.viewModels
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
-import com.hpilo.iloapp.ui.MainScreen
-import com.hpilo.iloapp.ui.theme.HpiloAppTheme
-import com.hpilo.iloapp.viewmodel.IloViewModel // Certifique-se de que esta linha está presente
+import com.example.hpilo.iloapp.ui.MainScreen
+import com.example.hpilo.iloapp.ui.theme.HpiloAppTheme
+import com.example.hpilo.iloapp.viewmodel.IloViewModel // Certifique-se de que esta linha está presente
 
 class MainActivity : ComponentActivity() {
     private val viewModel: IloViewModel by viewModels()

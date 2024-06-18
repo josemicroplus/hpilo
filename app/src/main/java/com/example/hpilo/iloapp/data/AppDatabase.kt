@@ -1,10 +1,10 @@
-package com.hpilo.iloapp.data
+package com.example.hpilo.iloapp.data
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.hpilo.iloapp.model.Server
+import com.example.hpilo.iloapp.model.Server
 
 @Database(entities = [Server::class], version = 1, exportSchema = false)
 abstract class AppDatabase : RoomDatabase() {

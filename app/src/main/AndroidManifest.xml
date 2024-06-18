@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.hpilo.iloapp">
+    package="com.example.hpilo.iloapp">
 
     <application
         android:allowBackup="true"

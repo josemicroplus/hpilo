@@ -1,11 +1,13 @@
-package com.HPILO.iloapp.ui
+package com.example.hpilo
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.*
+import androidx.compose.material3.Text
 import androidx.compose.runtime.*
+import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.HPILO.iloapp.viewmodel.IloViewModel
+import com.example.hpilo.iloapp.viewmodel.IloViewModel
 
 @Composable
 fun SystemInfoScreen(viewModel: IloViewModel) {
@@ -13,7 +15,7 @@ fun SystemInfoScreen(viewModel: IloViewModel) {
     val error by viewModel.error.observeAsState()
 
     LaunchedEffect(Unit) {
-        viewModel.fetchSystemInfo(viewModel.auth)
+        //viewModel.fetchSystemInfo(viewModel.auth)
     }
 
     Column(modifier = Modifier.padding(16.dp)) {
@@ -24,7 +26,7 @@ fun SystemInfoScreen(viewModel: IloViewModel) {
         }
 
         error?.let {
-            Text("Error: $it", color = MaterialTheme.colors.error)
+            Text("Error: $it")
         }
     }
 }

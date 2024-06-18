@@ -1,7 +1,7 @@
-package com.hpilo.iloapp.network
+package com.example.hpilo.iloapp.network
 
-import com.hpilo.iloapp.model.DiskStatus
-import com.hpilo.iloapp.model.SystemInfo
+import com.example.hpilo.iloapp.model.DiskStatus
+import com.example.hpilo.iloapp.model.SystemInfo
 import retrofit2.http.GET
 import retrofit2.http.Header
 
