@@ -6,8 +6,10 @@ import androidx.activity.compose.setContent
 import androidx.activity.viewModels
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
+import androidx.navigation.compose.rememberNavController
 import com.example.hpilo.iloapp.ui.MainScreen
-import com.example.hpilo.iloapp.ui.theme.HpiloAppTheme
+import com.example.hpilo.iloapp.ui.ServerListScreen
+import com.example.hpilo.ui.theme.HpiloTheme
 import com.example.hpilo.iloapp.viewmodel.IloViewModel // Certifique-se de que esta linha está presente
 
 class MainActivity : ComponentActivity() {
@@ -16,9 +18,11 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            HpiloAppTheme {
+            HpiloTheme {
+
+                val navController = rememberNavController()
                 Surface(color = MaterialTheme.colorScheme.background) {
-                    MainScreen(viewModel)
+                    MainScreen(viewModel, navController)
                 }
             }
         }
