@@ -18,12 +18,13 @@ fun IloApp(viewModel: IloViewModel, navController: NavHostController) {
 @Composable
 fun MainScreen(viewModel: IloViewModel, navController: NavHostController) {
     Scaffold(
-        bottomBar = { BottomNavigationBar(navController) }
+        bottomBar = { BottomNavigationBar(viewModel,navController) }
     ) { innerPadding ->
         // Your main content
         Surface(modifier = Modifier.padding(innerPadding)) {
             // Add your screen content here
-            ServerListScreen(viewModel, navController)
+            SetupNavGraph(viewModel,navController)
+            //ServerListScreen(viewModel, navController)
         }
     }
 }

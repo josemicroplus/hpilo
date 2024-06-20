@@ -20,9 +20,9 @@ fun SystemInfoScreen(viewModel: IloViewModel) {
 
     Column(modifier = Modifier.padding(16.dp)) {
         systemInfo?.let {
-            Text("System Model: ${it.model}")
-            Text("Serial Number: ${it.serialNumber}")
-            Text("BIOS Version: ${it.biosVersion}")
+            Text("System Model: ${it.SystemModel}")
+            Text("Serial Number: ${it.SerialNumber}")
+            Text("BIOS Version: ${it.BiosVersion}")
         }
 
         error?.let {

@@ -1,7 +1,7 @@
 package com.example.hpilo.iloapp.model
 
 data class DiskStatus(
-    val name: String,
-    val health: String,
-    val capacity: String
+    val Name: String,
+    val Health: String,
+    val Capacity: String
 )

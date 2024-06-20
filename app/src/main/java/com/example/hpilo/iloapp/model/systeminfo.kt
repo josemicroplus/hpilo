@@ -1,7 +1,9 @@
 package com.example.hpilo.iloapp.model
 
 data class SystemInfo(
-    val model: String,
-    val serialNumber: String,
-    val biosVersion: String
+    val SystemModel: String,
+    val BiosVersion: String,
+    val Description: String,
+    val HostName: String,
+    val SerialNumber: String
 )

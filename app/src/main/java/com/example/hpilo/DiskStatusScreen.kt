@@ -22,9 +22,11 @@ fun DiskStatusScreen(viewModel: IloViewModel) {
 
     Column(modifier = Modifier.padding(16.dp)) {
         diskStatus?.let {
-            it.forEach { disk ->
-                Text("Disk: ${disk.name} - Health: ${disk.health} - Capacity: ${disk.capacity}")
-            }
+            /*it.forEach { disk ->
+                Text("Disk: ${disk.Name} - Health: ${disk.Health} - Capacity: ${disk.Capacity}")
+            }*/
+
+            Text("Estado SmartStorage: ${diskStatus!!.status.health}")
         }
 
         error?.let {

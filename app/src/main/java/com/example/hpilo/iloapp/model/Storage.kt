@@ -4,8 +4,8 @@
 package com.example.hpilo.iloapp.model
 
 data class Storage(
-    val id: String,
-    val name: String,
-    val status: String,
-    val capacity: String
+    val Id: String,
+    val Name: String,
+    val Status: String,
+    val Capacity: String
 )
