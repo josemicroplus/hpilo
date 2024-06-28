@@ -8,5 +8,7 @@ data class Server(
     @PrimaryKey(autoGenerate = true) val id: Int = 0,
     val ip: String,
     val username: String,
-    val password: String
+    val password: String,
+    val status: String,
+    val name: String
 )

@@ -10,6 +10,9 @@ class ServerRepository(private val serverDao: ServerDao) {
     suspend fun insert(server: Server) {
         serverDao.insert(server)
     }
+    suspend fun delete(server: Server) {
+        serverDao.delServerById(server.id)
+    }
 
     fun getServerById(serverId: Int): Flow<Server> {
         return serverDao.getServerById(serverId)

@@ -18,7 +18,8 @@ fun IloApp(viewModel: IloViewModel, navController: NavHostController) {
 @Composable
 fun MainScreen(viewModel: IloViewModel, navController: NavHostController) {
     Scaffold(
-        bottomBar = { BottomNavigationBar(viewModel,navController) }
+        bottomBar = { BottomNavigationBar(viewModel,navController) },
+        //topBar = { TopNavigationBar(viewModel,navController) }
     ) { innerPadding ->
         // Your main content
         Surface(modifier = Modifier.padding(innerPadding)) {

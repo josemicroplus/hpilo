@@ -1,6 +1,7 @@
 package com.example.hpilo.iloapp.data
 
 import androidx.room.Dao
+import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
 import com.example.hpilo.iloapp.model.Server
@@ -16,4 +17,7 @@ interface ServerDao {
 
     @Query("SELECT * FROM servers WHERE id = :serverId")
     fun getServerById(serverId: Int): Flow<Server>
+
+    @Query("DELETE FROM servers WHERE id = :serverId")
+    fun delServerById(serverId: Int)
 }

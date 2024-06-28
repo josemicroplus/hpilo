@@ -4,94 +4,94 @@ import com.google.gson.annotations.SerializedName
 
 data class SmartStorageDiskDrive(
     @SerializedName("@odata.context")
-    val odataContext: String,
+    val odataContext: String="",
 
     @SerializedName("@odata.id")
-    val odataId: String,
+    val odataId: String="",
 
     @SerializedName("@odata.type")
-    val odataType: String,
+    val odataType: String="",
 
     @SerializedName("BlockSizeBytes")
-    val blockSizeBytes: Int,
+    val blockSizeBytes: Int=0,
 
     @SerializedName("CapacityGB")
-    val capacityGB: Int,
+    val capacityGB: Int=0,
 
     @SerializedName("CapacityLogicalBlocks")
-    val capacityLogicalBlocks: Long,
+    val capacityLogicalBlocks: Long=0,
 
     @SerializedName("CapacityMiB")
-    val capacityMiB: Int,
+    val capacityMiB: Int=0,
 
     @SerializedName("CarrierApplicationVersion")
-    val carrierApplicationVersion: String,
+    val carrierApplicationVersion: String="",
 
     @SerializedName("CarrierAuthenticationStatus")
-    val carrierAuthenticationStatus: String,
+    val carrierAuthenticationStatus: String="",
 
     @SerializedName("CurrentTemperatureCelsius")
-    val currentTemperatureCelsius: Int,
+    val currentTemperatureCelsius: Int=0,
 
     @SerializedName("Description")
-    val description: String,
+    val description: String="",
 
     @SerializedName("DiskDriveStatusReasons")
-    val diskDriveStatusReasons: List<String>,
+    val diskDriveStatusReasons: List<String> = emptyList(),
 
     @SerializedName("EncryptedDrive")
-    val encryptedDrive: Boolean,
+    val encryptedDrive: Boolean=false,
 
     @SerializedName("FirmwareVersion")
-    val firmwareVersion: FirmwareVersion,
+    val firmwareVersion: FirmwareVersion=FirmwareVersion(CurrentVersion("")),
 
     @SerializedName("Id")
-    val id: String,
+    val id: String="",
 
     @SerializedName("InterfaceSpeedMbps")
-    val interfaceSpeedMbps: Int,
+    val interfaceSpeedMbps: Int=0,
 
     @SerializedName("InterfaceType")
-    val interfaceType: String,
+    val interfaceType: String="",
 
     @SerializedName("Location")
-    val location: String,
+    val location: String="",
 
     @SerializedName("LocationFormat")
-    val locationFormat: String,
+    val locationFormat: String="",
 
     @SerializedName("MaximumTemperatureCelsius")
-    val maximumTemperatureCelsius: Int,
+    val maximumTemperatureCelsius: Int=0,
 
     @SerializedName("MediaType")
-    val mediaType: String,
+    val mediaType: String="",
 
     @SerializedName("Model")
-    val model: String,
+    val model: String="",
 
     @SerializedName("Name")
-    val name: String,
+    val name: String="",
 
     @SerializedName("PowerOnHours")
-    val powerOnHours: Any?,  // Could be Int or null
+    val powerOnHours: Any?=0,  // Could be Int or null
 
     @SerializedName("RotationalSpeedRpm")
-    val rotationalSpeedRpm: Int,
+    val rotationalSpeedRpm: Int=0,
 
     @SerializedName("SSDEnduranceUtilizationPercentage")
-    val ssdEnduranceUtilizationPercentage: Any?,  // Could be Int or null
+    val ssdEnduranceUtilizationPercentage: Any?=0,  // Could be Int or null
 
     @SerializedName("SerialNumber")
-    val serialNumber: String,
+    val serialNumber: String="",
 
     @SerializedName("Status")
-    val status: Status,
+    val status: Status=Status(health = "") ,
 
     @SerializedName("Type")
-    val type: String,
+    val type: String="",
 
     @SerializedName("links")
-    val links: Links
+    val links: Links=Links(arrayControllers = Href(""), hostBusAdapters = Href(""), self = Href(""))
 )
 
 data class FirmwareVersion(

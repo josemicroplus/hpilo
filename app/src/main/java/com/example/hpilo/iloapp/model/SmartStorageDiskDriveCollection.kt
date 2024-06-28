@@ -4,42 +4,43 @@ import com.google.gson.annotations.SerializedName
 
 data class SmartStorageDiskDriveCollection(
     @SerializedName("@odata.context")
-    val odataContext: String,
+    val odataContext: String="",
 
     @SerializedName("@odata.id")
-    val odataId: String,
+    val odataId: String="",
 
     @SerializedName("@odata.type")
-    val odataType: String,
+    val odataType: String="",
 
     @SerializedName("Description")
-    val description: String,
+    val description: String="",
 
     @SerializedName("MemberType")
-    val memberType: String,
+    val memberType: String="",
 
     @SerializedName("Members")
-    val members: List<Member>,
+    val members: List<Member> = emptyList(),
 
     @SerializedName("Members@odata.count")
-    val membersCount: Int,
+    val membersCount: Int=0,
 
     @SerializedName("Name")
-    val name: String,
+    val name: String="",
 
     @SerializedName("Total")
-    val total: Int,
+    val total: Int=0,
 
     @SerializedName("Type")
-    val type: String,
+    val type: String="",
 
     @SerializedName("links")
-    val links: Links
+    val links: Links=Links(arrayControllers = Href(""), hostBusAdapters = Href(""), self = Href(""))
 )
 
 data class Member(
-    @SerializedName("@odata.id")
-    val odataId: String,
+
+    @SerializedName("href")
+    val href: String="",
 
     var StateR: SmartStorageDiskDrive
 )
